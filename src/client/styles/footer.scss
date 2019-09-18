@@ -1,10 +1,14 @@
 footer {
-  background-color: #545454;
+  background-color: #2d2f33;
   display: flex;
   width: 100%;
   justify-content: center;
   padding: 2rem 0;
-  & > p {
-    color: #ffffff;
+
+  &>p {
+    color: #f6f5f5;
+    font-family: "Montserrat Medium";
+    font-size: 14px;
+    line-height: 16px;
   }
 }

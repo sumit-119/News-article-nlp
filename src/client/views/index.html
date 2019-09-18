@@ -10,32 +10,32 @@
   <header>
     <h1>News Article Analysis</h1>
   </header>
-  <main class="container">
-    <section class="form-section">
-      <form id="theForm" class="linkForm" autocomplete="off" onsubmit="Client.submitHandler(event)" method="post">
-        <label for="input" class="secondary-text">Type in a statement or URL of an article to be
+  <main>
+    <section>
+      <form id="theForm" autocomplete="off" onsubmit="Client.submitHandler(event)" method="post">
+        <label for="input">Type in a statement or URL of an article to be
           analysed</label></span>
         <input id="input" name="text-input" type="text" required="true" />
-        <input type="submit" value="Submit" class="btn">
+        <input type="submit" value="Submit">
       </form>
     </section>
-    <section id="result-section" class="hidden">
+    <section id="result-section">
       <h2>Results:</h2>
-      <h3 class="secondary-text" id="polarity">
+      <h3>
         Polarity:
-        <span></span>
+        <span id="polarity"></span>
       </h3>
-      <h3 class="secondary-text" id="polarity_confidence">
+      <h3>
         Polarity Confidence:
-        <span></span>
+        <span id="polarity_confidence"></span>
       </h3>
-      <h3 class="secondary-text" id="subjectivity">
+      <h3>
         Subjectivity:
-        <span></span>
+        <span id="subjectivity"></span>
       </h3>
-      <h3 class="secondary-text" id="subjectivity_confidence">
+      <h3>
         Subjectivity Confidence:
-        <span></span>
+        <span id="subjectivity_confidence"></span>
       </h3>
     </section>
   </main>

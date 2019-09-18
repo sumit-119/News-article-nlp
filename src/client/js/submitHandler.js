@@ -1,8 +1,10 @@
+const validUrl = require('./urlValidator');
+
 function submitHandler(event) {
   event.preventDefault();
   const input = document.getElementById("input").value;
   if (!input) return;
-  let endpoint = Client.validUrl(input) ? 'newsArticleTest' : 'textTest';
+  let endpoint = validUrl(input) ? 'newsArticleTest' : 'textTest';
   fetch(`/${endpoint}`, {
       method: "POST",
       mode: "cors",
@@ -25,4 +27,6 @@ function submitHandler(event) {
     });
 }
 
-module.exports = submitHandler;
+export {
+  submitHandler
+}

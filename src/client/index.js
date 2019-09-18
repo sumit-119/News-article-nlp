@@ -5,4 +5,3 @@ import "./styles/form.scss";
 import "./styles/main.scss";
 
 export * from "./js/submitHandler";
-export * from "./js/urlValidator";
