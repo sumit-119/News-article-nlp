@@ -1,5 +1,6 @@
-const submitHandler = require('../client/js/submitHandler');
-
+const {
+    submitHandler
+} = require('../client/js/submitHandler');
 describe('Test "submitHandler()" should exist', () => {
     test('It should return true', async () => {
         expect(submitHandler).toBeDefined();

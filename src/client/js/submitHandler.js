@@ -1,6 +1,6 @@
 const validUrl = require('./urlValidator');
 
-function submitHandler(event) {
+exports.submitHandler = (event) => {
   event.preventDefault();
   const input = document.getElementById("input").value;
   if (!input) return;
@@ -25,8 +25,4 @@ function submitHandler(event) {
       document.getElementById("subjectivity_confidence").innerHTML =
         data.subjectivity_confidence;
     });
-}
-
-export {
-  submitHandler
 }
