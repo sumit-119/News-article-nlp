@@ -25,6 +25,9 @@ h3 {
   font-weight: bold;
   margin: 0.5rem 0;
   color: #d3652c;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 h4 {
