@@ -18,6 +18,7 @@ exports.submitHandler = (event) => {
     .then(res => res.json())
     .then(data => {
       console.log(data);
+      document.getElementById("text").innerHTML = data.text;
       document.getElementById("polarity").innerHTML = data.polarity;
       document.getElementById("subjectivity").innerHTML = data.subjectivity;
       document.getElementById("polarity_confidence").innerHTML =

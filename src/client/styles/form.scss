@@ -37,6 +37,11 @@ input[type="url"] {
   font-size: 14px;
   border: 1px solid #355699;
   margin-top: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: orange;
 }
 
 // Tablet
